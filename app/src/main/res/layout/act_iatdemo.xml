@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:layout_height="40dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_dialog"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:text="点击语音弹窗"
+        android:layout_height="40dp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_dialog2"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:text="讯飞语音"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

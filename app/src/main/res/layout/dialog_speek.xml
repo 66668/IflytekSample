@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--弹窗 大客户 有确定按钮-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="250dp"
+        android:layout_height="252dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/daofu_dialog_bg"
+        android:orientation="vertical">
+
+        <!--展示结果-->
+        <EditText
+            android:background="@null"
+            android:id="@+id/tv_Result"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="3"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
+        <!--展示动画 布局高度= 120dp-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_Result"
+            android:layout_above="@+id/tv_control"
+            android:layout_height="wrap_content">
+
+            <!--说话动画效果-->
+            <ImageView
+                android:id="@+id/img_change"
+                android:background="@mipmap/recorder_player2"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <!--控制-->
+        <TextView
+            android:id="@+id/tv_control"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="37dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="重置"
+            android:textColor="#299FFB" />
+
+        <!--灰线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:background="#FFdddddd" />
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/speek_bottom_btncolor"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44dp"
+        android:background="@mipmap/daofu_close" />
+
+</LinearLayout>

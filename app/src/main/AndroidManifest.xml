@@ -52,6 +52,12 @@
         </activity>
 
         <activity
+            android:name="com.iflytek.voicedemo.MyIatDemoActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
             android:name="com.iflytek.voicedemo.AsrDemo"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
             android:screenOrientation="portrait" >

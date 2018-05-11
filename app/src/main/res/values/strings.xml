@@ -160,4 +160,8 @@
         <item>开启</item>
         <item>关闭</item>
     </string-array>
+
+    <!--自定义讯飞语音-->
+    <string name="recorder_Listening">正在听...</string>
+    <string name="recorder_restart">点击重录</string>
 </resources>

@@ -21,4 +21,14 @@
     <style name="textStyle">
         <item name="android:textSize">16sp</item>
     </style>
+
+    <!-- 语音弹窗 样式-->
+    <style name="SpeekDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
